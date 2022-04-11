@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 s1=e1.getText().toString();
                 s2=e2.getText().toString();
-                if(s1.contentEquals("vishal") && s2.contentEquals("1234")){
+                if(s1.contentEquals("Test1") && s2.contentEquals("Test@1")){
                     Toast.makeText(MainActivity.this, "Login", Toast.LENGTH_SHORT).show();
                     t1.speak("Login Successfully",TextToSpeech.QUEUE_FLUSH,null);
                 }else {

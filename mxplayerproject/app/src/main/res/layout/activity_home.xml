@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home">
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imagev1"
+        android:src="@drawable/icon"/>
+
+    <Button
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/imagev1"
+        android:background="@color/blue"
+        android:text="About Us"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/Music"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/home"
+        android:text="Music"/>
+
+    <Button
+        android:id="@+id/gallery"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/Music"
+        android:background="@color/blue"
+        android:text="Gallery"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:layout_below="@id/Music">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linear">
+
+            <ImageView
+            android:layout_width="410dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/show1" />
+            <ImageView
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/show2" />
+            <ImageView
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/show3" />
+            <ImageView
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/show4" />
+            <ImageView
+                android:layout_width="410dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/show5" />
+
+
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+</RelativeLayout>

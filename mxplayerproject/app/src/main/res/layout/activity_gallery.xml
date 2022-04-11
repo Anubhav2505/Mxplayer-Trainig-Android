@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Gallery">
+
+    <TextView
+        android:id="@+id/titlegallery"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="serif"
+        android:text="Gallery"
+        android:textColor="@color/blue"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="30dp"
+        android:id="@+id/scrollgallery"
+        android:layout_below="@id/titlegallery"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:id="@+id/gall1"
+                android:background="@drawable/show1"
+                android:layout_height="300dp">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:labelFor="@id/gall1"
+                android:text="MX Event"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/gall2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/show2"
+                android:layout_height="300dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:labelFor="@id/gall2"
+                android:text="MX Event"
+                android:textSize="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/gall3"
+                android:background="@drawable/show3"
+                android:layout_marginTop="20dp"
+                android:layout_height="300dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:labelFor="@id/gall3"
+                android:layout_marginTop="20dp"
+                android:text="MX Logo"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/gall4"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/show4"
+                android:layout_height="300dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:labelFor="@id/gall4"
+                android:layout_marginTop="20dp"
+                android:text="MX Event"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:id="@+id/gall5"
+                android:background="@drawable/show5"
+                android:layout_marginTop="20dp"
+                android:layout_height="300dp">
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:labelFor="@id/gall5"
+                android:layout_marginTop="20dp"
+                android:text="MX Takatak"
+                android:textSize="20dp"
+                android:layout_marginLeft="150dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</RelativeLayout>
